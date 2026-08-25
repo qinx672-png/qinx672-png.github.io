@@ -152,11 +152,13 @@
 
   /* ---------- 作品展示（点击展开） ---------- */
   .showcase {
-    max-height: 0; overflow: hidden; opacity: 0;
-    transition: max-height .45s ease, opacity .4s ease, margin-top .4s ease;
+    display: grid; grid-template-rows: 0fr;
+    opacity: 0; margin-top: 0;
+    transition: grid-template-rows .45s ease, opacity .4s ease, margin-top .4s ease;
   }
-  .card.open .showcase { max-height: 520px; opacity: 1; margin-top: 22px; }
+  .card.open .showcase { grid-template-rows: 1fr; opacity: 1; margin-top: 22px; }
   .showcase-inner {
+    overflow: hidden;
     border: 1px solid rgba(77,227,200,0.22);
     border-radius: 12px; padding: 18px;
     background: rgba(3,8,20,0.45);
@@ -164,6 +166,24 @@
   .showcase-title {
     font-size: 11px; letter-spacing: 0.22em; color: var(--muted);
     margin-bottom: 14px;
+  }
+  /* 作品图片 / 视频 */
+  .work-img {
+    display: block; max-width: 480px; width: 100%;
+    margin: 12px auto 0; border-radius: 10px; border: 1px solid var(--line);
+  }
+  .work-img.poster { max-width: 300px; }
+  .work-video {
+    display: block; width: 100%; margin: 12px auto 0;
+    border-radius: 10px; border: 1px solid var(--line); background: #000;
+  }
+  .work-scroll {
+    display: flex; gap: 10px; overflow-x: auto;
+    margin-top: 12px; padding-bottom: 8px;
+  }
+  .work-scroll img {
+    height: 360px; width: auto; flex-shrink: 0;
+    border-radius: 10px; border: 1px solid var(--line);
   }
   /* RAG 对话 */
   .demo-chat { display: flex; flex-direction: column; gap: 10px; }
@@ -355,12 +375,11 @@
           <p class="point">把「求职海投」这件苦差事，变成检查一下就提交</p>
           <div class="showcase">
             <div class="showcase-inner">
-              <p class="showcase-title mono">作品展示 · 自动填表</p>
-              <div class="demo-fill">
-                <div class="fill-row"><span>姓名</span><b>✓ 已自动填写</b></div>
-                <div class="fill-row"><span>学校 / 专业</span><b>✓ 已自动填写</b></div>
-                <div class="fill-row"><span>邮箱</span><b>✓ 已自动填写</b></div>
-                <div class="fill-row"><span>项目经历</span><b>✓ 已自动填写</b></div>
+              <p class="showcase-title mono">作品展示 · 界面截图（左右滑动）</p>
+              <div class="work-scroll">
+                <img src="images/offer-1.jpg" alt="Offer 速递界面截图 1">
+                <img src="images/offer-2.jpg" alt="Offer 速递界面截图 2">
+                <img src="images/offer-3.jpg" alt="Offer 速递界面截图 3">
               </div>
             </div>
           </div>
@@ -378,18 +397,16 @@
           <p class="point">一个人用 AI 搭起一条短剧生产线</p>
           <div class="showcase">
             <div class="showcase-inner">
-              <p class="showcase-title mono">作品展示 · 已出成片</p>
+              <p class="showcase-title mono">作品展示 · 海报 & 宣传片</p>
               <div class="douyin-row">
                 <span class="douyin-label">抖音号</span>
                 <span class="douyin-id mono">56422732494</span>
                 <button class="copy-btn mono" data-copy="56422732494" type="button">复制</button>
               </div>
-              <p class="demo-note">打开抖音，搜索上方抖音号即可观看</p>
-              <div class="demo-eps">
-                <div class="ep"><span class="ep-tag">EP01</span>《无人潜艇？》<em>13 镜 · 约 70s</em></div>
-                <div class="ep"><span class="ep-tag">EP02</span>《台风来了姐姐》<em>12 镜 · 约 75s</em></div>
-              </div>
-              <p class="demo-note">立绘 · 图生视频 · 情感配音 · 成片合成，全管线自动化</p>
+              <p class="demo-note">打开抖音，搜索上方抖音号即可观看全片</p>
+              <img class="work-img poster" src="images/poster-duanju.jpg" alt="《可以再见一面吗》宣传海报">
+              <video class="work-video" src="videos/promo.mp4" controls playsinline preload="none"></video>
+              <p class="demo-note">EP01《无人潜艇？》· EP02《台风来了姐姐》 · 立绘 / 图生视频 / 情感配音 / 成片合成，全管线自动化</p>
             </div>
           </div>
         </div>
