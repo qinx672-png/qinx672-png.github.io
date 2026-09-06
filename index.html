@@ -320,13 +320,13 @@
       <h2 class="title">一个海洋科学硕士，<br>转身去做 AI 产品</h2>
       <div class="about-grid">
         <div class="about-body reveal">
-          <p>我叫<strong>秦肖</strong>，上海交通大学海洋科学硕士（2026 届）。本科在中国海洋大学读化学，之后一路下潜——到黄河三角洲做地下水研究，到洱源做产业调研，到「雪龙号」科考船做科普。</p>
+          <p>我叫<strong>秦肖</strong>，海洋科学硕士（2026 届），本科读化学，之后一路下潜——到黄河三角洲做地下水研究，到洱源做产业调研，到“雪龙号”科考船做科普。</p>
           <p>读海洋的时候，我做的其实就是一件事：<strong>把问题沉下去</strong>。下潜、采样、用多年监测数据，把一个模糊的现象变成清晰的规律。</p>
           <p>后来我发现，AI 产品经理做的，本质是同一件事：把用户真实的痛点沉下去，再把答案浮上来。于是我用 Claude Code，从零把一个一个想法，做成能跑的东西。</p>
         </div>
         <div class="strengths reveal">
-          <div class="strength"><span class="idx mono">01</span><div><h3>AI 深度使用与动手能力</h3><p>独立落地 RAG 检索增强生成：PDF 解析 → 文本分块 → 向量化（bge-m3）→ 相似度检索与 top_k 调优；理解 Agent 架构（Prompt 工程、工具调用、知识检索、记忆、工作流编排），熟练用 Claude Code、DeepSeek-V3 提效</p></div></div>
-          <div class="strength"><span class="idx mono">02</span><div><h3>从 0 到 1 定义并落地</h3><p>不满足于想法，把「上传 PDF 提问」做成了能跑的 demo</p></div></div>
+          <div class="strength"><span class="idx mono">01</span><div><h3>AI 深度使用与动手能力</h3><p>独立落地 RAG 检索增强生成：PDF 解析 → 文本分块 → 向量化（bge-m3）→ 相似度检索与 top_k 调优；理解 Agent 架构（Prompt 工程、工具调用、知识检索、记忆、工作流编排），熟练用 Claude Code、DeepSeek-V4 Pro 提效</p></div></div>
+          <div class="strength"><span class="idx mono">02</span><div><h3>从 0 到 1 定义并落地</h3><p>不满足于想法，把“上传 PDF 提问”做成了能跑的 demo</p></div></div>
           <div class="strength"><span class="idx mono">03</span><div><h3>数据 → 结论 → 方案</h3><p>熟练 Python、SPSS、MATLAB，多年监测数据的分析提炼</p></div></div>
           <div class="strength"><span class="idx mono">04</span><div><h3>跨团队协同与推动</h3><p>研究生会主席，统筹跨院系项目 200+ 人次</p></div></div>
         </div>
@@ -339,7 +339,7 @@
     <div class="wrap">
       <p class="eyebrow mono">/ 02 · 我的项目</p>
       <h2 class="title">一个人 + AI = 一支小队</h2>
-      <p class="lede">这些项目都是我和 Claude 一起做的——从「一个想法」到「能跑的东西」，全程一个人完成。<span class="mono" style="color:var(--glow)">点击卡片，看作品展示。</span></p>
+      <p class="lede">这些项目都是我和 Claude 一起做的——从“一个想法”到“能跑的东西”，全程一个人完成。<span class="mono" style="color:var(--glow)">点击卡片，看作品展示。</span></p>
       <div class="projects">
 
         <!-- 项目 1：PaperPulse -->
@@ -349,16 +349,17 @@
             <span class="toggle mono">+</span>
           </div>
           <h3>PaperPulse — Your Research Trace Weaver</h3>
-          <p class="desc">科研文献 AI 助手：上传英文论文 PDF，用中文提问，它引用原文作答。解决「英文文献读不动」的真实痛点。</p>
-          <div class="tech"><span class="tag">RAG</span><span class="tag">DeepSeek-V3</span><span class="tag">bge-m3</span><span class="tag">Claude Code</span></div>
-          <p class="point">从学习者痛点出发，独立完成技术选型与落地，并调优检索效果</p>
+          <p class="desc">科研文献 AI 助手：上传英文论文 PDF，用中文提问，它引用原文作答；还能自动生成 8 字段精读笔记、论文研究路线图和跨论文知识图谱，一键导出 Word。解决“英文文献读不动”的真实痛点。</p>
+          <div class="tech"><span class="tag">Streamlit</span><span class="tag">RAG</span><span class="tag">混合检索 + Rerank</span><span class="tag">bge-m3</span><span class="tag">DeepSeek-V4</span></div>
+          <p class="point">独立完成 RAG 全链路技术选型与落地，并用 LLM 裁判搭建可复现的评测体系</p>
           <div class="showcase">
             <div class="showcase-inner">
-              <p class="showcase-title mono">作品展示 · 一次真实问答</p>
+              <p class="showcase-title mono">作品展示 · 真实问答 + 研究路线图</p>
               <div class="demo-chat">
                 <div class="chat-q">这篇论文用了什么方法做水质分析？</div>
                 <div class="chat-a">论文提出基于深度学习的预测方法，先用历史监测数据训练，再对目标断面做时空预测。<span class="cite">📎 引用 · 原文第 3 页："We propose a deep learning framework..."</span></div>
               </div>
+              <img class="work-img" src="images/roadmap-demo.png" alt="PaperPulse 自动生成的研究路线图示例">
             </div>
           </div>
         </div>
@@ -372,7 +373,7 @@
           <h3>Offer 速递 · 网申助手</h3>
           <p class="desc">桌面程序建一次信息库，浏览器插件在网申页面自动识别字段、自动填表。告别海投重复填写。</p>
           <div class="tech"><span class="tag">PyQt5</span><span class="tag">Chrome 扩展</span><span class="tag">本地接口</span></div>
-          <p class="point">把「求职海投」这件苦差事，变成检查一下就提交</p>
+          <p class="point">把“求职海投”这件苦差事，变成检查一下就提交</p>
           <div class="showcase">
             <div class="showcase-inner">
               <p class="showcase-title mono">作品展示 · 界面截图（左右滑动）</p>
@@ -418,7 +419,7 @@
             <span class="toggle mono">+</span>
           </div>
           <h3>数字分身桌面宠物</h3>
-          <p class="desc">桌面上会动的 AI 分身 XIAO，4 个表情随时切换，把「另一个我」养在桌面角落。</p>
+          <p class="desc">桌面上会动的 AI 分身 XIAO，4 个表情随时切换，把“另一个我”养在桌面角落。</p>
           <div class="tech"><span class="tag">PyQt5</span><span class="tag">桌面应用</span></div>
           <p class="point">把想法变成每天都能看见的陪伴</p>
           <div class="showcase">
@@ -444,7 +445,7 @@
       <div class="beliefs">
         <div class="belief reveal">
           <div class="big">壹</div>
-          <div><h3>从真实痛点出发</h3><p>不做「看起来有用」的功能。RAG 助手来自读不动论文，Offer 速递来自海投填表的烦躁——先有真问题，才有产品。</p></div>
+          <div><h3>从真实痛点出发</h3><p>不做“看起来有用”的功能。RAG 助手来自读不动论文，Offer 速递来自海投填表的烦躁——先有真问题，才有产品。</p></div>
         </div>
         <div class="belief reveal">
           <div class="big">贰</div>
@@ -466,7 +467,7 @@
       <div class="contact reveal">
         <h3>秦肖 · AI 产品经理</h3>
         <p>海洋科学硕士 → AI 产品。如果你也在把想法做成产品，欢迎交流。</p>
-        <a class="btn btn-primary" href="mailto:qx2024@sjtu.edu.cn">📧 qx2024@sjtu.edu.cn</a>
+        <a class="btn btn-primary" href="https://github.com/qinx672-png">GitHub：qinx672-png</a>
         <p class="note">（也可以先看看上面的项目，再决定要不要聊聊）</p>
       </div>
     </div>
